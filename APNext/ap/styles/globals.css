@@ -4,6 +4,72 @@
 
 @layer base {
   body {
-    @apply bg-[#06202a] text-gray-300;
+    @apply bg-white text-slate-800;
   }
+}
+
+.font-hi{
+  font-family: Eczar,Inter var,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+
+.font-en{
+  font-family: Inter var,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+
+.part-pointer{
+  height: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+  padding-left: .5rem;
+  padding-right: .5rem;
+  text-align: center;
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.part-pointer::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 0;
+  width: 0;
+  border-top: 12px solid transparent;
+  border-right: 5px solid white;
+  border-bottom: 12px solid transparent;
+}
+
+.btn-borderless{
+  color: rgb(234 88 12);
+}
+
+.text-gray-title{
+  opacity: 1;
+  color: rgb(30 41 59);
+  font-weight: 600;
+}
+
+.text-gray-subtitle{
+  color: rgb(30 41 59);
+  opacity: 1;
+}
+
+#markdown{
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#markdown p, #markdown div{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  text-align: left;
 }
